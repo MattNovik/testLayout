@@ -1,3 +1,23 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      .footer__copyright-wrapper © 2023 «LoremIpsum.net» Все права защищены.
+      ul.footer__payment-list
+        li.footer__payment-item
+          +icon('icon-qiwi', 20,20)
+          span Qiwi wallet
+        li.footer__payment-item
+          +icon('icon-ya', 20,20)
+          span Yandex Money
+        li.footer__payment-item
+          +icon('icon-web', 20,20)
+          span Web Money
+      ul.footer__contacts-list
+        li.footer__contacts-item
+          a(href="mailto:info@ipsum228.com")
+            +icon('icon-letter', 15,12)
+            span info@ipsum228.com
+        li.footer__contacts-item
+          a(href="#")
+            +icon('icon-vk', 15,12)
+            span Мы вконтакте

@@ -1,0 +1,104 @@
+mixin makeOrder()
+  section.makeOrder
+    .container
+      .makeOrder__wrapper
+        h2.makeOrder__title Оформление
+          span.makeOrder__title-colored  Заказа
+        span.makeOrder__info-add Перед заполнением формы ознакомьтесь с нашей схемой работы!
+        .makeOrder__info-lists-wrapper
+          ul.makeOrder__info-list-images
+            li.makeOrder__info-item-image
+              .makeOrder__info-item-image-wrapper
+                +icon('icon-search',33,33)
+              span Lorem ipsum dolorsit amet
+            li.makeOrder__info-item-image
+              .makeOrder__info-item-image-wrapper
+                +icon('icon-percent',33,33)
+                .makeOrder__info-item-separator
+                  span
+                  span
+                  span
+                  span
+                  span
+              span Сonsecteturadipiscing elit
+            li.makeOrder__info-item-image
+              .makeOrder__info-item-image-wrapper
+                +icon('icon-doc',33,33)
+                .makeOrder__info-item-separator
+                  span
+                  span
+                  span
+                  span
+                  span
+              span Sed do eiusmod tempor
+            li.makeOrder__info-item-image
+              .makeOrder__info-item-image-wrapper
+                +icon('icon-letter',33,33)
+                .makeOrder__info-item-separator
+                  span
+                  span
+                  span
+                  span
+                  span
+              span Esse cillum doloreeu fugiat
+            li.makeOrder__info-item-image
+              .makeOrder__info-item-image-wrapper
+                +icon('icon-money',33,33)
+                .makeOrder__info-item-separator
+                  span
+                  span
+                  span
+                  span
+                  span
+              span Excepteur sint occaecat cupidatat non proident
+        form.makeOrder__form-wrapper(action="")
+          .makeOrder__form-inputs-wrapper
+            +custom-select({
+              id: "id-example-1",
+              placeholder: "Выберите тип системы",
+              ariaLabel: "Выберите одну из опций",
+              name: "name-example-1",
+              error: "some-error",
+              optionsList: [{
+                text: "example-1",
+                value: "id-1"
+                },{
+                  text: "example-2",
+                   value: "id-2"
+                },{
+                  text: "example-3",
+                  value: "id-3"
+                },{
+                  text: "example-4", value: "id-4"
+                },{
+                  text: "example-5", value: "id-5"
+                },{
+                  text: "example-6", value: "id-6"
+                }
+              ]})(data-select="", data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-required).custom-select.custom-select--placeholder.makeOrder__select
+            +custom-input({
+              inputType: "text",
+              inputName: "email",
+              inputPlaceholder: 'Ваш e-mail'
+            })(data-validate-type="text", data-limitation="name", data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-required).custom-form__input.makeOrder__email-input
+            +custom-input({
+              inputType: "text",
+              inputName: "name",
+              inputPlaceholder: 'Ваше имя'
+            })(data-validate-type="text", data-limitation="name", data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-required).custom-form__input.makeOrder__name-input
+            .makeOrder__range-wrapper
+                .makeOrder__range-text-wrapper
+                  span.makeOrder__range-info Sed ut perspiciatis, unde omnis iste natus
+                  .makeOrder__range-value
+                    span#demo
+                    span %
+                input(type="range" min="1" max="100" value="75").slider#myRange
+            button(type="button").makeOrder__files-load
+              label(for="load-file")
+                +icon('icon-docEmp',18,20)
+                span Прикрепить файл
+              input.visibility-hidden(type="file")#load-file
+            button(type='submit').makeOrder__button-submit Отправить
+
+
+
