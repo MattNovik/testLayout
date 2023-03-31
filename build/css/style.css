@@ -793,7 +793,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("../../img/content/mainBg.jpg");
+  background-image: url("../img/content/mainBg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 92px 0 0 0;
@@ -802,7 +802,7 @@ main {
 
 @supports (flex-basis: max-content) and (-moz-appearance: meterbar) {
   .start {
-    background: url("../../img/content/mainBg.webp");
+    background: url("../img/content/mainBg.webp");
   }
 }
 
@@ -971,7 +971,7 @@ main {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #272733;
-  background-image: url("../../img/content/placeholderBg.png");
+  background-image: url("../img/content/placeholderBg.png");
   background-size: cover;
   background-repeat: no-repeat;
   /* FF 66+ */
@@ -979,7 +979,7 @@ main {
 
 @supports (flex-basis: max-content) and (-moz-appearance: meterbar) {
   .makeOrder {
-    background: url("../../img/content/placeholderBg.webp");
+    background: url("../img/content/placeholderBg.webp");
   }
 }
 
@@ -2760,15 +2760,15 @@ main {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (-webkit-min-device-pixel-ratio: 0), screen and (-webkit-min-device-pixel-ratio: 0) and (-o-min-device-pixel-ratio: 0/1), screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-@supports (background-image: -webkit-image-set(url("../../img/content/mainBg.webp") 1x)) {
+@supports (background-image: -webkit-image-set(url("../img/content/mainBg.webp") 1x)) {
     .start {
-      background: -webkit-image-set(url("../../img/content/mainBg.webp") 1x);
+      background: -webkit-image-set(url("../img/content/mainBg.webp") 1x);
     }
 }
 
-@supports (background-image: -webkit-image-set(url("../../img/content/placeholderBg.webp") 1x)) {
+@supports (background-image: -webkit-image-set(url("../img/content/placeholderBg.webp") 1x)) {
     .makeOrder {
-      background: -webkit-image-set(url("../../img/content/placeholderBg.webp") 1x);
+      background: -webkit-image-set(url("../img/content/placeholderBg.webp") 1x);
     }
 }
 }
