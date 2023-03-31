@@ -2431,6 +2431,9 @@ main {
 
   .main-nav__toggle {
     display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
   }
 
   .makeOrder {
