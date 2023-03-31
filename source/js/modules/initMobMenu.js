@@ -11,6 +11,7 @@ const initMobMenu = () => {
     const scrollLock = new ScrollLock();
 
     const toggleMenu = (e) => {
+      /* window.scrollTo(0, 0); */
       e.stopPropagation();
       if (e.target.closest('.main-nav__toggle')) {
         menuList.classList.toggle('main-nav__list--opened-mob');

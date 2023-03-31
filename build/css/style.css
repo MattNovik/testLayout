@@ -447,6 +447,7 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2396,7 +2397,7 @@ main {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     max-width: 500px;
